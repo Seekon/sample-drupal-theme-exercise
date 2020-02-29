@@ -3,8 +3,49 @@
  * This is the base CSS file.
  */
 
+@import "colors";
+
 body {
   margin: 0;
-  font-family: "Roboto", Verdana, sans-serif;
-  font-size: 1rem;
+  color: $color-lightgray-text;
+  background-color: $color-black;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem; /* 14px */ // TODO: ASK: or cross-browser compatibility
+  font-style: normal;
+  line-height: 214%; /* 30px */
 }
+
+h1 {
+  text-transform: capitalize;
+  color: $color-white;
+  font-size: 4rem; /* 64px; */
+  font-weight: 100;
+  line-height: 4.6875rem; /* 75px; */
+}
+
+h2 {
+  text-transform: uppercase;
+  color: $color-white;
+  font-size: 2.25rem; /* 36px */
+  font-weight: 300;
+  line-height: 2.625rem; /* 42px */
+}
+
+h3 {
+  color: $color-white;
+  font-size: 1.5rem; /* 24px */
+  font-weight: 500;
+  line-height: 1.75rem; /* 28px */
+}
+
+b,
+strong {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: $color-white;
+}
+
+// TODO: Buttons

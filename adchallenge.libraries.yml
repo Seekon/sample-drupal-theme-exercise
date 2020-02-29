@@ -20,4 +20,4 @@ webfonts-roboto:
     gpl-compatible: false
   css:
     theme:
-      '//fonts.googleapis.com/css?family=Roboto': { type: external, minified: true }
+      '//fonts.googleapis.com/css?family=Roboto:100,300,500': { type: external, minified: true }

@@ -4,6 +4,51 @@
  */
 body {
   margin: 0;
-  font-family: "Roboto", Verdana, sans-serif;
-  font-size: 1rem;
+  color: #d5d5d5;
+  background-color: #101010;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  /* 14px */
+  font-style: normal;
+  line-height: 214%;
+  /* 30px */
+}
+
+h1 {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 4rem;
+  /* 64px; */
+  font-weight: 100;
+  line-height: 4.6875rem;
+  /* 75px; */
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2.25rem;
+  /* 36px */
+  font-weight: 300;
+  line-height: 2.625rem;
+  /* 42px */
+}
+
+h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  /* 24px */
+  font-weight: 500;
+  line-height: 1.75rem;
+  /* 28px */
+}
+
+b,
+strong {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
