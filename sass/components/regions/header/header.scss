@@ -1,0 +1,11 @@
+/**
+ * @file
+ * This is the file containing header region.
+*/
+
+.region-header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}

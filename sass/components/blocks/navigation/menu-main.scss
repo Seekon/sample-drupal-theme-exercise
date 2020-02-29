@@ -1,0 +1,25 @@
+/**
+ * @file
+ * This is the file containing navigation block.
+*/
+@import "../../../breakpoints";
+
+.menu--main {
+  display: flex;
+  align-items: center;
+}
+
+ul.menu {
+  display: flex;
+  flex-wrap: nowrap;
+  max-height: none;
+  margin-left: initial;
+}
+
+.menu-item {
+  text-transform: uppercase;
+}
+
+.menu-item + .menu-item {
+  margin-left: 1.5rem; // 40px
+}

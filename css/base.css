@@ -1,37 +1,49 @@
 /**
  * @file
  * This is the base CSS file.
- */
+*/
 body {
   margin: 0;
   color: #d5d5d5;
   background-color: #101010;
   font-family: "Roboto", sans-serif;
   font-size: 0.875rem;
-  /* 14px */
   font-style: normal;
   line-height: 214%;
-  /* 30px */
 }
 
 h1 {
   text-transform: capitalize;
   color: #fff;
   font-size: 4rem;
-  /* 64px; */
   font-weight: 100;
-  line-height: 4.6875rem;
-  /* 75px; */
+  line-height: 117%;
+}
+
+@media screen and (min-width: 48em) {
+  h1 {
+    font-size: 10rem;
+  }
 }
 
 h2 {
+  position: relative;
   text-transform: uppercase;
   color: #fff;
   font-size: 2.25rem;
-  /* 36px */
   font-weight: 300;
-  line-height: 2.625rem;
+  line-height: 117%;
   /* 42px */
+}
+
+h2:after {
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  content: "";
+  background: #0097a7;
 }
 
 h3 {
@@ -39,7 +51,7 @@ h3 {
   font-size: 1.5rem;
   /* 24px */
   font-weight: 500;
-  line-height: 1.75rem;
+  line-height: 117%;
   /* 28px */
 }
 
@@ -51,4 +63,8 @@ strong {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+img {
+  width: 100%;
 }

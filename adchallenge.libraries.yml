@@ -3,6 +3,10 @@ global-styling:
   css:
     base:
       css/base.css: {}
+    component:
+      css/components/blocks/branding/branding.css: {}
+      css/components/blocks/navigation/menu-main.css: {}
+      css/components/regions/header/header.css: {}
 
   js:
     js/scripts.js: {}
@@ -20,4 +24,4 @@ webfonts-roboto:
     gpl-compatible: false
   css:
     theme:
-      '//fonts.googleapis.com/css?family=Roboto:100,300,500': { type: external, minified: true }
+      '//fonts.googleapis.com/css?family=Roboto:100,300,500,900': { type: external, minified: true }
