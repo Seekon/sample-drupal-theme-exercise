@@ -6,6 +6,7 @@ version: 1.0
 core: 8.x
 libraries:
  - adchallenge/global-styling
+ - adchallenge/webfonts-roboto
 
 # Regions
 regions:

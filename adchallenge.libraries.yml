@@ -2,7 +2,7 @@ global-styling:
   version: 1.x
   css:
     base:
-      css/style.css: {}
+      css/base.css: {}
 
   js:
     js/scripts.js: {}
@@ -11,3 +11,13 @@ global-styling:
     - core/jquery
     - core/drupal
     - core/drupalSettings
+
+webfonts-roboto:
+  remote: https://fonts.google.com
+  license:
+    name: Apache License, Version 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0
+    gpl-compatible: false
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Roboto': { type: external, minified: true }
