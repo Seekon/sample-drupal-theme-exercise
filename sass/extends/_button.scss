@@ -1,0 +1,18 @@
+// This is the button extend file.
+@use "../colors";
+
+%button {
+  padding: 16px 50px;
+  text-transform: uppercase;
+  border: 1px solid colors.$color-red;
+  border-radius: 5px;
+  background-color: colors.$color-red;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 114%;
+
+  &:hover {
+    border: 1px solid colors.$color-white;
+    background: transparent;
+  }
+}

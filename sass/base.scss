@@ -1,15 +1,12 @@
-/**
- * @file
- * This is the base CSS file.
-*/
+// This is the base CSS file.
 
-@import "colors";
-@import "breakpoints";
+@use "colors";
+@use "extends/button";
 
 body {
   margin: 0;
-  color: $color-lightgray-text;
-  background-color: $color-black;
+  color: colors.$color-lightgray-text;
+  background-color: colors.$color-black;
   font-family: "Roboto", sans-serif;
   font-size: 0.875rem; // 14px TODO: ASK: better accessibility or pixel perfect cross-browser compatibility?
   font-style: normal;
@@ -18,7 +15,7 @@ body {
 
 h1 {
   text-transform: capitalize;
-  color: $color-white;
+  color: colors.$color-white;
   font-size: 4rem; // 64px;
   //font-size: 12vw;
   font-weight: 100;
@@ -28,7 +25,7 @@ h1 {
 h2 {
   position: relative;
   text-transform: uppercase;
-  color: $color-white;
+  color: colors.$color-white;
   font-size: 2.25rem; // 36px
   //font-size: 5vw;
   font-weight: 300;
@@ -39,14 +36,14 @@ h2:after {
   position: absolute;
   bottom: -1rem;
   left: 0;
-  width: 50px;
+  width: 100px;
   height: 3px;
   content: "";
-  background: $color-heading-border-blue;
+  background: colors.$color-heading-border-blue;
 }
 
 h3 {
-  color: $color-white;
+  color: colors.$color-white;
   font-size: 1.5rem; /* 24px */
   font-weight: 500;
   line-height: 117%; /* 28px */
@@ -59,7 +56,7 @@ strong {
 
 a {
   text-decoration: none;
-  color: $color-white;
+  color: colors.$color-white;
 }
 
 img {
@@ -67,3 +64,6 @@ img {
 }
 
 // TODO: Buttons
+button {
+  @extend %button;
+}
