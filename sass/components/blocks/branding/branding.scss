@@ -1,12 +1,16 @@
-/**
- * @file
- * This is the file containing branding block.
-*/
+// This is the file containing branding block.
+
+@use "breakpoints" as bp;
+
 .block-system-branding-block {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   margin-top: 1.5rem;
+
+  @include bp.for-tablet-up {
+    margin-top: 0;
+  }
 }
 
 .site-logo {

@@ -36,3 +36,8 @@
   opacity: 0.4;
   background: #fff;
 }
+@media (min-width: 48em) {
+  .agiledrop-content-full-top-content-header {
+    padding: 10rem 0;
+  }
+}

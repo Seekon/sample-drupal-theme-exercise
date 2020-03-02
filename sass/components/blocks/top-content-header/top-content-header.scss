@@ -2,6 +2,7 @@
 
 @use "colors";
 @use "extends/button";
+@use "breakpoints" as bp;
 
 .agiledrop-content-full-top-content-header {
   background-repeat: no-repeat;
@@ -31,5 +32,9 @@
 
   .field--name-field-link a {
     @extend %button;
+  }
+
+  @include bp.for-tablet-up {
+    padding: 10rem 0;
   }
 }

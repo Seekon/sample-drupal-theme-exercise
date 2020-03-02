@@ -1,11 +1,19 @@
-/**
- * @file
- * This is the file containing header region.
-*/
+// This is the file containing header region.
+
+@use "breakpoints" as bp;
 
 .region-header {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+
+  @include bp.for-tablet-up {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1050px;
+    height: 100%;
+    margin: 0 auto;
+  }
 }
