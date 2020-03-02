@@ -1,0 +1,10 @@
+.agiledrop-content-full-lastest-event .container {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0 10%;
+  padding-bottom: 1.5rem;
+  background-color: #161e21;
+}
+.agiledrop-content-full-lastest-event .field--name-body {
+  padding: 1rem 0;
+}
