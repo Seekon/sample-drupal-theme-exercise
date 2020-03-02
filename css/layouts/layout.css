@@ -1,6 +1,6 @@
 @media (min-width: 48em) {
   .layout-container > header {
-    position: sticky;
+    position: fixed;
     z-index: 1;
     top: 0;
     width: 100%;
