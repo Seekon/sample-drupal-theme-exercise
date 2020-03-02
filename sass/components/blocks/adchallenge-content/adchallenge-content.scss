@@ -1,3 +1,9 @@
+@use "breakpoints" as bp;
+
 .block-system-main-block {
   margin: 0 10%;
+
+  @include bp.for-tablet-up {
+    padding: 100px 0;
+  }
 }

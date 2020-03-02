@@ -16,11 +16,10 @@
 
   .node__content {
     .createdDate {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem; // 24px
       color: colors.$color-mediumgray;
       font-size: 0.75rem;
       line-height: 117%;
-
     }
   }
 

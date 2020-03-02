@@ -1,0 +1,14 @@
+adchallenge.mobile:
+  label: mobile
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+adchallenge.narrow:
+  label: narrow
+  mediaQuery: 'all and (min-width: 768px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x

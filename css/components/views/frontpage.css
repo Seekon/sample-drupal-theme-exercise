@@ -1,3 +1,16 @@
 .view-frontpage .view-content .views-row {
   padding: 2rem 0;
 }
+@media (min-width: 48em) {
+  .view-frontpage .view-content .views-row {
+    flex-basis: 30%;
+    padding: 0;
+  }
+}
+@media (min-width: 48em) {
+  .view-frontpage .view-content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}

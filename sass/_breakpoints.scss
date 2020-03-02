@@ -1,0 +1,7 @@
+// This is the file containing breakpoints.
+
+$size-tablet: 48em; // 768px
+
+@mixin for-tablet-up {
+  @media (min-width: $size-tablet) { @content; }
+}
