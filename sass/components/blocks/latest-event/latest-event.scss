@@ -2,7 +2,7 @@
 @use "breakpoints" as bp;
 
 .agiledrop-content-full-lastest-event {
-  padding: 120px 10%;
+  padding: 75px 10%;
   background-color: colors.$color-darkblue;
 
   .container {
@@ -39,5 +39,9 @@
     .image-style-article-teaser {
       object-fit: cover;
     }
+  }
+
+  @include bp.for-tablet-up {
+    padding: 120px 10%;
   }
 }

@@ -1,5 +1,5 @@
 .agiledrop-content-full-lastest-event {
-  padding: 120px 10%;
+  padding: 75px 10%;
   background-color: #161e21;
 }
 .agiledrop-content-full-lastest-event .container {
@@ -32,4 +32,9 @@
 }
 .agiledrop-content-full-lastest-event .field--type-image .image-style-article-teaser {
   object-fit: cover;
+}
+@media (min-width: 48em) {
+  .agiledrop-content-full-lastest-event {
+    padding: 120px 10%;
+  }
 }

@@ -1,9 +1,10 @@
 .block-system-main-block {
-  padding: 110px 10%;
+  padding: 50px 10%;
 }
 @media (min-width: 48em) {
   .block-system-main-block {
     max-width: 65.625rem;
     margin: 0 auto;
+    padding: 110px 10%;
   }
 }

@@ -1,5 +1,5 @@
 .agiledrop-content-full-about-me {
-  padding: 250px 10% 120px;
+  padding: 75px 10%;
 }
 .agiledrop-content-full-about-me .container {
   display: flex;
@@ -57,4 +57,9 @@
 }
 .agiledrop-content-full-about-me .field--type-image .image-style-about-me {
   object-fit: cover;
+}
+@media (min-width: 48em) {
+  .agiledrop-content-full-about-me {
+    padding: 250px 10% 120px;
+  }
 }
