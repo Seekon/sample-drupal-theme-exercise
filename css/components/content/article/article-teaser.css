@@ -1,0 +1,40 @@
+.node--view-mode-teaser.node--type-article > h2 {
+  margin: 0.75rem auto;
+  text-transform: initial;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1;
+}
+.node--view-mode-teaser.node--type-article > h2:after {
+  display: none;
+}
+.node--view-mode-teaser.node--type-article .node__content .createdDate {
+  margin-bottom: 1rem;
+  color: #949494;
+  font-size: 0.75rem;
+  line-height: 117%;
+}
+.node--view-mode-teaser.node--type-article .node__links ul.inline li {
+  padding: 0;
+}
+.node--view-mode-teaser.node--type-article .node-readmore > a {
+  position: relative;
+  display: inline-block;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+.node--view-mode-teaser.node--type-article .node-readmore > a:after {
+  position: absolute;
+  top: 0.0625rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-left: 0.3125rem;
+  content: "";
+  background-image: url("../../../../images/svg/arrow-blue.svg");
+  background-repeat: no-repeat;
+  background-size: 0.5rem 0.75rem;
+}
+.node--view-mode-teaser.node--type-article .node-readmore > a:hover:after {
+  background-image: url("../../../../images/svg/arrow-red.svg");
+}

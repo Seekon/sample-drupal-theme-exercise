@@ -1,0 +1,56 @@
+@use "colors";
+
+.node--view-mode-teaser.node--type-article {
+  > h2 {
+    margin: 0.75rem auto;
+    text-transform: initial;
+    color: colors.$color-white;
+    font-size: 1.5rem; // 24px
+    font-weight: 500;
+    line-height: 1;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .node__content {
+    .createdDate {
+      margin-bottom: 1rem;
+      color: colors.$color-mediumgray;
+      font-size: 0.75rem;
+      line-height: 117%;
+
+    }
+  }
+
+  .node__links {
+    ul.inline li {
+      padding: 0;
+    }
+  }
+
+  // TODO: Put somewhere more globally available and perhaps change from a to li to reduce hover flickering
+  .node-readmore > a {
+    position: relative;
+    display: inline-block;
+    font-size: 0.875rem; // 14px
+    line-height: 1rem; // 16px
+
+    &:after {
+      position: absolute;
+      top: 0.0625rem; // 1px
+      width: 0.75rem; // 12px 0.75rem
+      height: 0.75rem;
+      margin-left: 0.3125rem;
+      content: "";
+      background-image: url("../../../../images/svg/arrow-blue.svg");
+      background-repeat: no-repeat;
+      background-size: 0.5rem 0.75rem; // 8px 12px
+    }
+
+    &:hover:after {
+      background-image: url("../../../../images/svg/arrow-red.svg");
+    }
+  }
+}
