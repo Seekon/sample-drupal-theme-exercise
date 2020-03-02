@@ -1,0 +1,11 @@
+.menu--footer ul.menu {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem 10%;
+  background-color: #0f2123;
+}
+.menu--footer ul.menu a {
+  text-transform: capitalize;
+  color: #949494;
+}

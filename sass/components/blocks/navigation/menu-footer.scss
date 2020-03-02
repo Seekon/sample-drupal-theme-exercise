@@ -1,0 +1,16 @@
+@use "colors";
+
+.menu--footer {
+  ul.menu {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 10%;
+    background-color: colors.$color-darkgreen-footer;
+
+    a {
+      text-transform: capitalize;
+      color: colors.$color-mediumgray;
+    }
+  }
+}

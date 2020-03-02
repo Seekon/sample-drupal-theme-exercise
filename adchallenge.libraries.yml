@@ -9,6 +9,7 @@ global-styling:
       css/components/blocks/branding/branding.css: {}
       css/components/blocks/latest-event/latest-event.css: {}
       css/components/blocks/top-content-header/top-content-header.css: {}
+      css/components/blocks/navigation/menu-footer.css: {}
       css/components/blocks/navigation/menu-main.css: {}
       css/components/content/article/article-teaser.css: {}
       css/components/regions/header/header.css: {}
