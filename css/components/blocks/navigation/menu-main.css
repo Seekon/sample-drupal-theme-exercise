@@ -1,7 +1,3 @@
-/**
- * @file
- * This is the file containing navigation block.
-*/
 .menu--main {
   display: flex;
   align-items: center;
@@ -12,6 +8,23 @@ ul.menu {
   flex-wrap: nowrap;
   max-height: none;
   margin-left: initial;
+}
+ul.menu a {
+  display: inline;
+}
+ul.menu a.is-active {
+  position: relative;
+  display: inline;
+  color: #fff;
+}
+ul.menu a.is-active:before {
+  position: absolute;
+  bottom: -0.5rem;
+  width: 90%;
+  left: 5%;
+  height: 3px;
+  content: "";
+  background: #0097a7;
 }
 
 .menu-item {

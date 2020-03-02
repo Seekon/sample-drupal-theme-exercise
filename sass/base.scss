@@ -58,6 +58,10 @@ a {
   text-decoration: none;
   color: colors.$color-white;
 }
+a:hover,
+a:focus {
+  color: colors.$color-white;
+}
 
 img {
   width: 100%;

@@ -1,8 +1,6 @@
-/**
- * @file
- * This is the file containing navigation block.
-*/
-@import "../../../breakpoints";
+// This is the file containing navigation block.
+@use "breakpoints";
+@use "colors";
 
 .menu--main {
   display: flex;
@@ -14,6 +12,26 @@ ul.menu {
   flex-wrap: nowrap;
   max-height: none;
   margin-left: initial;
+
+  a {
+    display: inline;
+  }
+
+  a.is-active {
+    position: relative;
+    display: inline;
+    color: colors.$color-white;
+
+    &:before {
+      position: absolute;
+      bottom: -0.5rem;
+      width: 90%;
+      left: 5%;
+      height: 3px;
+      content: "";
+      background: colors.$color-blue;
+    }
+  }
 }
 
 .menu-item {
