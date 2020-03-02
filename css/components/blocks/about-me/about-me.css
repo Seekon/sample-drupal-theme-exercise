@@ -1,5 +1,5 @@
 .agiledrop-content-full-about-me {
-  padding: 120px 10%;
+  padding: 250px 10% 120px;
 }
 .agiledrop-content-full-about-me .container {
   display: flex;
@@ -14,7 +14,29 @@
     padding: 0;
   }
   .agiledrop-content-full-about-me .container .img-right {
+    position: relative;
     flex: 0 0 50%;
+  }
+  .agiledrop-content-full-about-me .container .img-right:before {
+    position: absolute;
+    z-index: -1;
+    top: -140px;
+    left: -165px;
+    width: 330px;
+    height: 330px;
+    content: "";
+    background-color: #0f2123;
+  }
+  .agiledrop-content-full-about-me .container .img-right:after {
+    position: absolute;
+    z-index: -1;
+    right: -75px;
+    bottom: -75px;
+    width: 150px;
+    height: 150px;
+    content: "";
+    background-color: #1d1524;
+    transform: rotate(-45deg);
   }
   .agiledrop-content-full-about-me .container .content-left {
     flex: 1 1 50%;

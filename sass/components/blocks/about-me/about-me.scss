@@ -1,7 +1,8 @@
 @use "breakpoints" as bp;
+@use "colors";
 
 .agiledrop-content-full-about-me {
-  padding: 120px 10%;
+  padding: 250px 10% 120px;
 
   .container {
     display: flex;
@@ -15,7 +16,32 @@
       padding: 0;
 
       .img-right {
+        position: relative;
+
         flex: 0 0 50%;
+
+        &:before {
+          position: absolute;
+          z-index: -1;
+          top: -140px;
+          left: -165px;
+          width: 330px;
+          height: 330px;
+          content: "";
+          background-color: colors.$color-darkgreen-footer;
+        }
+
+        &:after {
+          position: absolute;
+          z-index: -1;
+          right: -75px;
+          bottom: -75px;
+          width: 150px;
+          height: 150px;
+          content: "";
+          background-color: colors.$color-darkpurple-square;
+          transform: rotate(-45deg);
+        }
       }
 
       .content-left {
