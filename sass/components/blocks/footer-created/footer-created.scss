@@ -1,0 +1,23 @@
+@use "colors";
+
+#block-footercreated {
+  background-color: colors.$color-green-footer;
+
+  .field--name-body {
+    //padding: 1.125rem 10%;
+    text-align: center;
+    color: colors.$color-lightgray-text;
+    font-size: 0.75rem; // 12px
+    line-height: 0.875rem; // 14px
+
+    p {
+      margin: 1.125rem 10%;
+    }
+
+    a {
+      text-decoration: underline;
+      color: colors.$color-lightgray-text;
+    }
+  }
+
+}

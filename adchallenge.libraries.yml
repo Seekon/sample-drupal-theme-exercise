@@ -7,6 +7,7 @@ global-styling:
       css/components/blocks/about-me/about-me.css: {}
       css/components/blocks/adchallenge-content/adchallenge-content.css: {}
       css/components/blocks/branding/branding.css: {}
+      css/components/blocks/footer-created/footer-created.css: {}
       css/components/blocks/latest-event/latest-event.css: {}
       css/components/blocks/top-content-header/top-content-header.css: {}
       css/components/blocks/navigation/menu-footer.css: {}
@@ -14,6 +15,7 @@ global-styling:
       css/components/content/article/article-teaser.css: {}
       css/components/regions/header/header.css: {}
       css/components/views/frontpage.css: {}
+      css/utilities/clearfix.css: {}
 
   js:
     js/scripts.js: {}

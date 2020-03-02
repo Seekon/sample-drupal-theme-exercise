@@ -1,0 +1,16 @@
+#block-footercreated {
+  background-color: #1e2c2e;
+}
+#block-footercreated .field--name-body {
+  text-align: center;
+  color: #d5d5d5;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+}
+#block-footercreated .field--name-body p {
+  margin: 1.125rem 10%;
+}
+#block-footercreated .field--name-body a {
+  text-decoration: underline;
+  color: #d5d5d5;
+}
