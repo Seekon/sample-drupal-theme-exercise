@@ -1,15 +1,48 @@
 @use "colors";
+@use "breakpoints" as bp;
 
 .agiledrop-content-full-lastest-event {
+  padding: 120px 10%;
+  background-color: colors.$color-darkblue;
+
   .container {
     display: flex;
     flex-direction: column-reverse;
-    padding: 0 10%;
     padding-bottom: 1.5rem;
-    background-color: colors.$color-darkblue;
+
+    .img-left {
+      width: 100%;
+    }
+
+    @include bp.for-tablet-up {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      margin: 0 auto;
+      padding: 0;
+
+      .img-left {
+        flex: 1 1 45%;
+      }
+
+      .content-right {
+        flex: 1 1 55%;
+        padding-left: 4rem;
+      }
+    }
   }
 
   .field--name-body {
     padding: 1rem 0;
+  }
+
+  .field--type-image {
+    height: 100%;
+
+    img {
+      display: block;
+      object-fit: cover;
+    }
   }
 }

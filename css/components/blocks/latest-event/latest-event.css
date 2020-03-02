@@ -1,10 +1,39 @@
+.agiledrop-content-full-lastest-event {
+  padding: 120px 10%;
+  background-color: #161e21;
+}
 .agiledrop-content-full-lastest-event .container {
   display: flex;
   flex-direction: column-reverse;
-  padding: 0 10%;
   padding-bottom: 1.5rem;
-  background-color: #161e21;
+}
+.agiledrop-content-full-lastest-event .container .img-left {
+  width: 100%;
+}
+@media (min-width: 48em) {
+  .agiledrop-content-full-lastest-event .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .agiledrop-content-full-lastest-event .container .img-left {
+    flex: 1 1 45%;
+  }
+  .agiledrop-content-full-lastest-event .container .content-right {
+    flex: 1 1 55%;
+    padding-left: 4rem;
+  }
 }
 .agiledrop-content-full-lastest-event .field--name-body {
   padding: 1rem 0;
+}
+.agiledrop-content-full-lastest-event .field--type-image {
+  height: 100%;
+}
+.agiledrop-content-full-lastest-event .field--type-image img {
+  display: block;
+  object-fit: cover;
 }
