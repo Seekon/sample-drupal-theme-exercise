@@ -20,10 +20,11 @@ ul.menu a.is-active {
 ul.menu a.is-active:before {
   position: absolute;
   bottom: -0.5rem;
-  width: 90%;
   left: 5%;
+  width: 90%;
   height: 3px;
   content: "";
+  border-radius: 3px;
   background: #0097a7;
 }
 
