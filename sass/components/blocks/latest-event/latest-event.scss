@@ -8,26 +8,22 @@
   .container {
     display: flex;
     flex-direction: column-reverse;
-    padding-bottom: 1.5rem;
-
-    .img-left {
-      width: 100%;
-    }
 
     @include bp.for-tablet-up {
       flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
+      align-items: stretch;
+      justify-content: stretch;
       height: 100%;
       margin: 0 auto;
       padding: 0;
 
       .img-left {
-        flex: 1 1 45%;
+        flex: 0 0 45%;
       }
 
       .content-right {
         flex: 1 1 55%;
+        align-self: center;
         padding-left: 4rem;
       }
     }
@@ -38,10 +34,9 @@
   }
 
   .field--type-image {
-    height: 100%;
+    display: inline;
 
-    img {
-      display: block;
+    .image-style-article-teaser {
       object-fit: cover;
     }
   }

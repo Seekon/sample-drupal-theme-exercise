@@ -1,9 +1,48 @@
+@use "breakpoints" as bp;
+
 .agiledrop-content-full-about-me {
+  padding: 120px 10%;
+
   .container {
-    padding: 1.5rem 10%;
+    display: flex;
+
+    @include bp.for-tablet-up {
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: stretch;
+      height: 100%;
+      margin: 0 auto;
+      padding: 0;
+
+      .img-right {
+        flex: 0 0 50%;
+      }
+
+      .content-left {
+        flex: 1 1 50%;
+        padding-right: 5.5rem;
+
+        h2 {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .content-left {
+    padding-right: 1rem;
   }
 
   .field--name-body {
-    padding: 1rem 0;
+    padding-right: 1rem;
+  }
+
+  .field--type-image {
+    display: inline;
+
+    .image-style-about-me {
+      object-fit: cover;
+    }
   }
 }
+// TODO: Add 2 squares around picture

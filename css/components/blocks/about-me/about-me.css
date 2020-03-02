@@ -1,6 +1,38 @@
+.agiledrop-content-full-about-me {
+  padding: 120px 10%;
+}
 .agiledrop-content-full-about-me .container {
-  padding: 1.5rem 10%;
+  display: flex;
+}
+@media (min-width: 48em) {
+  .agiledrop-content-full-about-me .container {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .agiledrop-content-full-about-me .container .img-right {
+    flex: 0 0 50%;
+  }
+  .agiledrop-content-full-about-me .container .content-left {
+    flex: 1 1 50%;
+    padding-right: 5.5rem;
+  }
+  .agiledrop-content-full-about-me .container .content-left h2 {
+    margin-top: 0;
+  }
+}
+.agiledrop-content-full-about-me .content-left {
+  padding-right: 1rem;
 }
 .agiledrop-content-full-about-me .field--name-body {
-  padding: 1rem 0;
+  padding-right: 1rem;
+}
+.agiledrop-content-full-about-me .field--type-image {
+  display: inline;
+}
+.agiledrop-content-full-about-me .field--type-image .image-style-about-me {
+  object-fit: cover;
 }
