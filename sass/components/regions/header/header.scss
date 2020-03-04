@@ -11,9 +11,9 @@
   @include bp.for-tablet-up {
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
     max-width: 1050px;
     height: 100%;
     margin: 0 auto;
+    padding: 0 10%;
   }
 }
