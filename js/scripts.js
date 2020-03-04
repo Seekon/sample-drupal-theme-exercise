@@ -1,10 +1,8 @@
 (function() {
   'use strict';
 
-  // FIXME: Very bad... need to find a proper solution in drupal templating to add id to main node view block
-  document.querySelector('a[href*=' + 'challenge-news' + ']').setAttribute('href', '#block-adchallenge-content');
-
-  var section = document.querySelectorAll("#challenge-home, #block-adchallenge-content, #challenge-event, #challenge-about-me");
+  // Find all id-s that starts with 'challenge-'.
+  var section = document.querySelectorAll('[id^="challenge-"]');
   var sections = {};
   var i = 0;
   var didscroll = true;
@@ -40,12 +38,12 @@
       {
         if (sections[i]-(height / 2) <= scrollPosition)
         {
-          var isnotnull = document.querySelector('.is-active');
+          var isnotnull = document.querySelector('#block-adchallenge-main-menu .is-active');
           if (isnotnull)
           {
             isnotnull.setAttribute('class', ' ');
           }
-          document.querySelector('a[href*=' + i + ']').setAttribute('class', 'is-active');
+          document.querySelector('#block-adchallenge-main-menu a[href*=' + i + ']').setAttribute('class', 'is-active');
         }
       }
     }
@@ -55,7 +53,7 @@
 
 jQuery(document).ready(function(){
   // Select all links with hashes
-jQuery('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
+jQuery('#block-adchallenge-main-menu a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
     // On-page links
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname)
     {
@@ -67,9 +65,11 @@ jQuery('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event
       {
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
+        // Get client window height to use for better smoothscroll positioning.
+        var height = jQuery(window).height();
         jQuery('html, body').animate(
           {
-            scrollTop: target.offset().top
+            scrollTop: target.offset().top - height / 6
           }, 1000, function()
             {
             // Callback after animation
