@@ -12,7 +12,6 @@
 @media (min-width: 48em) {
   .layout-container > main {
     position: relative;
-    top: -6rem;
   }
 }
 

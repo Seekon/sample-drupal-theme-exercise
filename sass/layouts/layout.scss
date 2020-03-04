@@ -17,7 +17,6 @@
   > main {
     @include bp.for-tablet-up {
       position: relative;
-      top: -6rem;
     }
   }
 }
